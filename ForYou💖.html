@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You 💖</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Background Animations -->
+    <div class="background-animation">
+        <div class="floating-balloons">
+            <div class="balloon balloon-1"></div>
+            <div class="balloon balloon-2"></div>
+            <div class="balloon balloon-3"></div>
+            <div class="balloon balloon-4"></div>
+            <div class="balloon balloon-5"></div>
+            <div class="balloon balloon-6"></div>
+        </div>
+        <div class="confetti-container" id="confetti"></div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Header Section -->
+        <header class="birthday-header">
+            <div class="cake-icon">
+                <img src="cake.svg" alt="Birthday Cake" class="cake-animation">
+            </div>
+            <h1 class="main-title animate-bounce">Selamat Ulang Tahun Sayangku!</h1>
+            <p class="subtitle animate-fade-in">
+                Halo sayangku, Selamat Ulang Tahun yang penuh berkah dan kebahagiaan! 
+                Semoga di hari istimewa ini, Tuhan melimpahkan umur panjang, rezeki yang berlimpah, 
+                kesehatan yang selalu terjaga, kebahagiaan yang tak pernah pudar, 
+                serta kasih dan penyertaan-Nya yang setia mengiringi setiap langkahmu. 
+                Di momen spesial ini, ku berdoa agar hidupmu dipenuhi dengan tawa yang meriah, 
+                cinta yang tulus dan menghangatkan jiwa, serta kenangan-kenangan indah yang tak hanya menghiasi hari-harimu, 
+                tetapi juga menjadi cahaya abadi yang menyinari setiap detik perjalananmu. 
+                Semoga setiap impianmu mekar bagaikan bunga di musim semi, setiap harapanmu terwujud seperti bintang yang bersinar di langit malam, 
+                dan setiap langkahmu dipenuhi dengan sukacita, keberanian, serta kehangatan yang tak pernah usai, 
+                menjadikan hidupmu sebuah kisah luar biasa yang penuh makna dan keajaiban! 🎂✨
+            </p>
+            <div class="birthday-wishes">
+                <div class="wish-item animate-slide-left">
+                    <i class="fas fa-gift"></i>
+                    <span>Semoga semua impianmu terwujud!</span>
+                </div>
+                <div class="wish-item animate-slide-right">
+                    <i class="fas fa-heart"></i>
+                    <span>Sehat selalu dan bahagia!</span>
+                </div>
+                <div class="wish-item animate-slide-left">
+                    <i class="fas fa-star"></i>
+                    <span>Tahun ini penuh berkah!</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Music Player Section -->
+        <section class="music-player-section">
+            <h2 class="section-title">🎶Lagu Spesial Untukmu🎶</h2>
+            <div class="music-player">
+                <div class="music-info">
+                    <div class="song-details">
+                        <h3>✨Anugerah Terindah✨</h3>
+                        <p>Andmesh</p>
+                    </div>
+                </div>
+                <div class="player-controls">
+                    <button id="playPauseBtn" class="control-btn">
+                        <i class="fas fa-play"></i>
+                    </button>
+                    <button id="muteBtn" class="control-btn">
+                        <i class="fas fa-volume-up"></i>
+                    </button>
+                    <input type="range" id="volumeSlider" class="volume-slider" min="0" max="100" value="50">
+                </div>
+                <audio id="birthdayMusic" loop>
+                    <source src="Lagu.mp3" type="audio/mpeg">
+                    <source src="Lagu.mp3" type="audio/mpeg">
+                    
+                </audio>
+            </div>
+        </section>
+
+        <!-- Photo Gallery Section -->
+        <section class="photo-gallery-section">
+            <h2 class="section-title">The Gift🎉 </h2>
+            
+            <!-- Main Photo Display -->
+            <div class="main-photo-container">
+                <div class="photo-frame">
+                    <div class="photo-placeholder" id="mainPhoto">
+                        <img src="Happy Birthday Sayangku.jpg" alt="Main Photo" id="currentPhoto" class="photo-display">
+                    </div>
+            </div>
+        </section>
+
+        <!-- Birthday Message Section -->
+        <section class="message-section">
+            <div class="message-card">
+                <h3>Pesan Spesial Untukmu</h3>
+                <div class="animated-text">
+                    <p class="typewriter">
+                        Di hari yang istimewa ini, semoga kebahagiaan selalu menyertaimu. 
+                        Setiap tahun yang berlalu adalah kesempatan baru untuk meraih mimpi 
+                        dan menciptakan kenangan indah. Selamat ulang tahun! 🎉🎈
+                    </p>
+                </div>
+                <div class="signature">
+                    <p>Dengan cinta dan doa terbaik ❤️</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Elements -->
+        <section class="interactive-section">
+            <button id="celebrateBtn" class="celebrate-btn">
+                🎉 Rayakan! 🎉
+            </button>
+            <div class="party-mode" id="partyMode">
+                <div class="party-message">SELAMAT ULANG TAHUN! 🎂🎈🎊</div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="birthday-footer">
+        <p>Dibuat dengan ❤️ untuk hari spesialmu</p>
+        <div class="footer-decorations">
+            <span>🎂</span>
+            <span>🎈</span>
+            <span>🎉</span>
+            <span>🎊</span>
+            <span>✨</span>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
